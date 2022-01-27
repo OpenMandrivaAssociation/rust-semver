@@ -6,8 +6,8 @@
 %global crate semver
 
 Name:           rust-%{crate}
-Version:        0.9.0
-Release:        12%{?dist}
+Version:        1.0.4
+Release:        1
 Summary:        Semantic version parsing and comparison
 
 # Upstream license specification: MIT/Apache-2.0
@@ -94,49 +94,3 @@ which use "serde" feature of "%{crate}" crate.
 %check
 %cargo_test
 %endif
-
-%changelog
-* Thu Jan 30 2020 Fedora Release Engineering <releng@fedoraproject.org> - 0.9.0-12
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
-
-* Fri Jul 26 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.9.0-11
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
-
-* Thu Jun 20 11:12:03 CEST 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.9.0-10
-- Regenerate
-
-* Sun Jun 09 15:24:52 CEST 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.9.0-9
-- Regenerate
-
-* Sun Mar 10 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.9.0-8
-- Do not pull optional dependencies
-
-* Sat Feb 02 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.9.0-7
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild
-
-* Sat Oct 27 2018 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.9.0-6
-- Adapt to new packaging
-
-* Sat Jul 28 2018 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.9.0-5
-- Rebuild to trigger tests
-
-* Sat Jul 14 2018 Fedora Release Engineering <releng@fedoraproject.org> - 0.9.0-4
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
-
-* Fri Feb 09 2018 Fedora Release Engineering <releng@fedoraproject.org> - 0.9.0-3
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild
-
-* Mon Jan 08 2018 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.9.0-2
-- Rebuild for rust-packaging v5
-
-* Thu Nov 09 2017 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.9.0-1
-- Update to 0.9.0
-
-* Thu Jun 15 2017 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.7.0-1
-- Update to 0.7.0
-
-* Wed Jun 14 2017 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.6.0-2
-- Port to use rust-packaging
-
-* Sun Feb 26 2017 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.6.0-1
-- Initial package
