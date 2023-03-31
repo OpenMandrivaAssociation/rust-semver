@@ -5,7 +5,7 @@
 
 Name:           rust-%{crate}
 Version:        1.0.4
-Release:        1
+Release:        2
 Summary:        Parser and evaluator for Cargo's flavor of Semantic Versioning
 
 # Upstream license specification: MIT OR Apache-2.0
